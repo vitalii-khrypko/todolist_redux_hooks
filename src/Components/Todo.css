@@ -1,0 +1,116 @@
+/* Основний контейнер */
+.inputTodo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    margin: 50px auto;
+}
+
+/* Вхідне поле */
+.inputTodo input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    background: #ffffff;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Коли поле отримує фокус */
+.inputTodo input:focus {
+    box-shadow: 0 0 8px rgba(0, 184, 148, 0.3);
+}
+
+/* Кнопка додавання */
+.inputTodo button {
+    padding: 12px;
+    background: #00b894; /* Бірюзовий */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+
+/* Кнопка в стані hover */
+.inputTodo button:hover {
+    background: #009d81;
+}
+
+/* Кнопка в стані активності */
+.inputTodo button:active {
+    background: #008368;
+}
+
+/* Список справ */
+.todoList {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Окремий елемент списку */
+.todoItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 12px 15px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+    margin: 8px 0;
+    transition: all 0.3s ease;
+}
+
+/* Ефект при наведенні на елемент списку */
+.todoItem:hover {
+    transform: scale(1.02);
+    background: #f8f9fa;
+}
+
+/* Текст завдання */
+.todoText {
+    font-size: 16px;
+    color: #333;
+    flex-grow: 1;
+}
+
+/* Кнопка Delete */
+.deleteBtn {
+    padding: 8px 12px;
+    background: #ff7675; /* Помаранчевий */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    margin-left: 12px;
+}
+
+/* Кнопка в стані hover для Delete */
+.deleteBtn:hover {
+    background: #e46060;
+}
+
+/* Кнопка в стані активності для Delete */
+.deleteBtn:active {
+    background: #cc4f4f;
+}
