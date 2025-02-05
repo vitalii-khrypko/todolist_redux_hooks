@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     padding: 20px;
     background: linear-gradient(135deg, #fdfbfb, #ebedee);
     border-radius: 12px;
@@ -29,11 +29,6 @@
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-/* Коли поле отримує фокус */
-.inputTodo input:focus {
-    box-shadow: 0 0 8px rgba(0, 184, 148, 0.3);
-}
-
 /* Кнопка додавання */
 .inputTodo button {
     padding: 12px;
@@ -48,6 +43,7 @@
     font-weight: 600;
     letter-spacing: 1px;
     box-sizing: border-box;
+    margin-top: 10px;
 }
 
 /* Кнопка в стані hover */
@@ -69,14 +65,15 @@
 /* Окремий елемент списку */
 .todoItem {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
     background: #ffffff;
-    padding: 12px 15px;
+    padding: 15px 20px;
     border-radius: 8px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
     margin: 8px 0;
     transition: all 0.3s ease;
+    width: 100%;
 }
 
 /* Ефект при наведенні на елемент списку */
@@ -90,19 +87,83 @@
     font-size: 16px;
     color: #333;
     flex-grow: 1;
+    margin-bottom: 10px;
 }
 
-/* Кнопка Delete */
-.deleteBtn {
-    padding: 8px 12px;
-    background: #ff7675; /* Помаранчевий */
+/* Контейнер для редагування */
+.edit-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+/* Поле вводу для редагування */
+.editInput {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Кнопка Save */
+.saveBtn {
+    padding: 12px;
+    background: #00b894;
     color: white;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
     transition: all 0.3s ease;
-    margin-left: 12px;
+    width: 100%;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+/* Кнопка Save в стані hover */
+.saveBtn:hover {
+    background: #009d81;
+}
+
+/* Кнопка Save в стані active */
+.saveBtn:active {
+    background: #008368;
+}
+
+/* Контейнер для кнопок Edit і Delete */
+.todoBtns {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+/* Кнопка Edit */
+.editBtn {
+    padding: 12px;
+    background: #ffbb33;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    width: 100%; /* Робить кнопку Edit однаковою по ширині з іншими кнопками */
+}
+
+/* Кнопка Delete */
+.deleteBtn {
+    padding: 12px;
+    background: #ff7675;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    width: 100%; /* Робить кнопку Delete однаковою по ширині з іншими кнопками */
 }
 
 /* Кнопка в стані hover для Delete */
@@ -113,4 +174,13 @@
 /* Кнопка в стані активності для Delete */
 .deleteBtn:active {
     background: #cc4f4f;
+}
+
+/* Текст дати */
+.todoDate {
+    font-size: 14px;
+    color: gray;
+    margin-right: 10px;
+    font-style: italic;
+    margin-bottom: 8px;
 }
