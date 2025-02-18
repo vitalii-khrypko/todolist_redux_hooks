@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Todolist Redux Hooks
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Todolist Redux Hooks is a React to-do list application that utilizes **global state management with Redux**. The project employs **React hooks (`useSelector` and `useDispatch`)** for state access and actions dispatching, instead of using `connect`. The reducer logic is manually implemented, following **Redux Core principles**.
 
-## Available Scripts
+## Technologies
+- **React** - for building the user interface.
+- **Redux (manual reducer implementation)** - for centralized state management.
+- **React-Redux Hooks (`useSelector`, `useDispatch`)** - for interacting with the Redux store.
+- **CSS3** - for styling the application.
 
-In the project directory, you can run:
+## Features
+- Add, remove, and toggle tasks as completed.
+- Global state management using Redux.
+- Uses **React hooks (`useSelector`, `useDispatch`)** instead of `connect()`.
+- Manually written reducer logic and actions.
+- Simple and clean UI.
 
-### `npm start`
+## How to Run the Project
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/vitalii-khrypko/todolist_redux_hooks.git
+2. Navigate to the project folder and install dependencies:
+  ```bash
+  cd todolist_redux_hooks && npm install
+  ```
+3. Run the project locally:
+  ```bash
+  npm start
+  ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The project will start a development server and open the app in your default browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributors
+**Vitalii Khrypko** - Project author.
